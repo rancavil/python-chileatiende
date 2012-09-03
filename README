@@ -1,0 +1,7 @@
+Python ChileAtiende:
+--------------------
+Esta es cliente escrito en Python que consume los servicios REST de la API para desarrolladores
+del sitio ChileAtiende.
+
+Permite la integracion con los contenidos de este sitio relacionado a los tramites que los servicios
+del Estado (instituciones publicas) publican a traves de el.
