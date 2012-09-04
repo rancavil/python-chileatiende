@@ -74,13 +74,13 @@ class Fichas(ChileAtiende):
 
 	def obtener(self,fichaId=None,type='json',callback=''):
 		""" Metodo que permite obtener una ficha de acuerdo a su identificador unico
-		fichaId. El metodo consume el servicio REST:
+		    fichaId. El metodo consume el servicio REST:
 
-			GET https://www.chileatiende.cl/api/fichas/{fichaId}
+		    GET https://www.chileatiende.cl/api/fichas/{fichaId}
 
-		Nota: El valor por defecto de type es "json", esto indica que los datos
-		devueltos por el metodo estan en ese formato. Si type = "xml", los datos
-		son devueltos como un documento XML.
+		    Nota: El valor por defecto de type es "json", esto indica que los datos
+		    devueltos por el metodo estan en ese formato. Si type = "xml", los datos
+		    son devueltos como un documento XML.
 		"""
 		self._connection.request('GET','/api/fichas/'+fichaId+'?access_token='+self._access_token+'&type='+type+'&callback='+callback)
 		
