@@ -61,13 +61,13 @@ class ChileAtiende:
 
 class Fichas(ChileAtiende):
 	""" La clase Fichas representa las Fichas de registro de los tramites disponibles
-        a traves de ChileAtiende. Deriva de la clase base ChileAtiende.
+            a traves de ChileAtiende. Deriva de la clase base ChileAtiende.
 
-        Ejemplo de uso:
-		
-		from chileatiende.clientes import Fichas
+            Ejemplo de uso:
 
-		fichas = Fichas(access_token=u'PiKjqM1XAx1P3Wia')
+            from chileatiende.clientes import Fichas
+
+            fichas = Fichas(access_token=u'PiKjqM1XAx1P3Wia')
 	"""
 	def __init__(self,access_token=None):
 		ChileAtiende.__init__(self,access_token)
