@@ -20,8 +20,7 @@ import xml.dom.minidom
 
 class ChileAtiende:
 	""" Clase base que se encarga de establecer la conexion al sitio de ChileAtiende
-
-	Importante: Para poder hacer uso de los servicios REST provistos por la api
+	    Importante: Para poder hacer uso de los servicios REST provistos por la api
 	de ChileAtiende es necesario obtener el access_token, pues toda
 	comunicacion se realiza teniendo este token.
 
