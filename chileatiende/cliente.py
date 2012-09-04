@@ -21,17 +21,17 @@ import xml.dom.minidom
 class ChileAtiende:
 	""" Clase base que se encarga de establecer la conexion al sitio de ChileAtiende
             Importante: Para poder hacer uso de los servicios REST provistos por la api
-            de ChileAtiende es necesario obtener el access_token, pues toda
-            comunicacion se realiza teniendo este token.
+            de ChileAtiende es necesario obtener el access_token, pues toda comunicacion 
+            se realiza teniendo este token.
 
-	        Para poder utilizar la interfaz de programacion de chile atiende
-            se debe solicitar un token de acceso a traves de la siguiente URL:
+            Para poder utilizar la interfaz de programacion de chile atiende se debe 
+            solicitar un token de acceso a traves de la siguiente URL:
             
             https://www.chileatiende.cl/desarrolladores/access_token
 
-        Para mas antecedentes de la api se puede revisar la siguiente URL:
+            Para mas antecedentes de la api se puede revisar la siguiente URL:
 
-        https://www.chileatiende.cl/desarrolladores
+            https://www.chileatiende.cl/desarrolladores
 	"""
 	def __init__(self,access_token=None):
 		""" Constructor que inicializa la conexion al sitio de ChileAtiende """
