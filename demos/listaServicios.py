@@ -53,8 +53,8 @@ servicios = Servicios(access_token=access_token)
 listaServicios = servicios.listar()
 
 print 'serivicios : '
-print '\ttitulo     :',listaServicio['servicios']['titulo']
-print '\ttipo       :',listaServicio['servicios']['tipo']
+print '\ttitulo     :',listaServicios['servicios']['titulo']
+print '\ttipo       :',listaServicios['servicios']['tipo']
 print '\titems      : '
 print '\t\tservicio : '
 for servicio in listaServicios['servicios']['items']['servicio']:
