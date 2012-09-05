@@ -43,6 +43,9 @@ class ChileAtiende:
 		""" Metodo privado que lee los datos desde la conexion establesida """
 		response  = self._connection.getresponse()
 		data      = response.read()
+		resp = self._analizaRespuesta(data)
+		if resp['status'] != 200:
+			raise Exception('Error : '+resp['mensaje'])
 		return data
 
 	def _json(self):
@@ -58,6 +61,18 @@ class ChileAtiende:
 		data_xml = xml.dom.minidom.parseString(data)
 
 		return data_xml
+
+	def _analizaRespuesta(response):
+		status  = response.status
+		reason  = response.reason
+		if status == 200 and reason == 'OK':
+			return {'status':status, 'reason':reason}
+		else:
+			html    = xml.dom.minidom.parseString(response)
+			h1 = html.getElementsByTagName('body')[0].getElementsByTagName('div')[0].getElementsByTagName('h1')[0].childNodes[0].nodeValue
+			p  = html.getElementsByTagName('body')[0].getElementsByTagName('div')[0].getElementsByTagName('p')[0].childNodes[0].nodeValue
+			mensaje = h1+" "+p
+			return {'status':status, 'reason':reason,'mensaje':mensaje}
 
 class Fichas(ChileAtiende):
 	""" La clase Fichas representa las Fichas de registro de los tramites disponibles
