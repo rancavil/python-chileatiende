@@ -62,7 +62,7 @@ class ChileAtiende:
 
 		return data_xml
 
-	def _analizaRespuesta(response):
+	def _analizaRespuesta(self,response):
 		status  = response.status
 		reason  = response.reason
 		if status == 200 and reason == 'OK':
