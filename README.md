@@ -4,7 +4,7 @@ Esta es cliente escrito en Python que consume los servicios REST de la API para 
 
 Permite la integracion con los contenidos de este sitio, el cual está relacionado a los tramites que los servicios del Estado (instituciones publicas) publican a traves de él.
 
-La API implementa los recursos como clases Python.
+La API implementa los recursos provistos por la API REST como clases Python.
 
      Fichas
           obtener()
