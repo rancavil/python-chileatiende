@@ -41,9 +41,11 @@ Para el uso de la API se debe solicitar un token de acceso (access_token), para 
 
 El siguente ejemplo accede al listado de servicios registrados en ChileAtiende.
 
+IMPORTANTE: recuerda solicitar y utilizar tu propio access_token
+
      from chileatiende.cliente import Servicios
      
-     access_token = 'PiKjQM1XAx1L4WiA'
+     access_token = 'tu propio access_token'
      servicios = Servicios(access_token=access_token)
      
      listaServicios = servicios.listar()
