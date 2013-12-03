@@ -6,14 +6,14 @@ Permite la integracion con los contenidos de este sitio, el cual está relaciona
 
 La API implementa los recursos como clases Python.
 
-Fichas
-	obtener()
-	listar()
-	listarPorServicio()
+     Fichas
+          obtener()
+          listar()
+          listarPorServicio()
 
-Servicios
-	obtener()
-	listar()
+     Servicios
+          obtener()
+          listar()
 
 Ver las condiciones para el uso de la API de ChileAtiende en:
 
